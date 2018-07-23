@@ -2,7 +2,7 @@
 import os
 import shutil
 
-#HomeWork
+#HomeWork1
 def create_dir(name):
     try:
         os.mkdir(name)
