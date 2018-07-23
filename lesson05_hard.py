@@ -6,7 +6,7 @@ import re
 import sys
 print('sys.argv = ', sys.argv)
 
-
+#Homework1
 def print_help():
     print("help - получение справки")
     print("mkdir <dir_name> - создание директории")

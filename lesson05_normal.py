@@ -2,7 +2,7 @@
 import lesson05_easy as easy
 import os
 
-# HomeWork
+# HomeWork1
 cur_dir = os.getcwd()
 while True:
     try:
