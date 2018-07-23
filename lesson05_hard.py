@@ -11,6 +11,10 @@ def print_help():
     print("help - получение справки")
     print("mkdir <dir_name> - создание директории")
     print("ping - тестовый ключ")
+    print("cp <file_name> - создает копию указанного файла")
+    print("rm <file_name> - удаляет указанный файл ")
+    print("cp <file_name> - создает копию указанного файла")
+    print("cp <file_name> - создает копию указанного файла")
 
 
 def make_dir():
@@ -48,12 +52,15 @@ def remove():
     if file_name not in os.listdir(os.getcwd()):
         print("Указанного файла нет в директории")
         return
-    try:
-        os.remove(os.path.join(os.getcwd(),file_name))
-    except:
-        print("Removing error")
+    if input(f'Удалить файл {file_name}? (y/n)') == 'y':
+        try:
+            os.remove(os.path.join(os.getcwd(),file_name))
+        except:
+            print("Removing error")
+            return
+        print('Файл успешно удален')
         return
-    print('Файл успешно удален')
+    print("Файл не удален")
 
 
 def curdir():
